@@ -1,5 +1,17 @@
 $(document).ready(function() {
-
+    console.log("FDSA");
+    // highlights the current page on the sidebar menu
+    $(".sidelist li").each(function() {
+        var link = $(this).find("a").attr("href").split("#")[0];
+        var url = window.location.href.split("#")[0];
+        console.log(link);
+        console.log(url)
+        // check all combinations of having a trailing slash
+        if (link + "/" == url || link == url) {
+            $(this).addClass("highlight");
+            return; // we've done what we want so leave
+        }
+    });
     // Handles the hidden blog on the main page
     //$(".blog-button").on("click", function() {
     //    $(".content").removeClass("hidden");

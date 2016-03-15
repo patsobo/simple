@@ -36,6 +36,14 @@ a {
 	text-decoration: none;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.highlight {
+  background-color: #bbb;
+}
+
 
 /* navigation bar */
 
@@ -77,10 +85,6 @@ a {
   text-decoration: none;
   transition: none;
   cursor: pointer;
-}
-
-.hidden {
-	visibility: hidden;
 }
 
 /* end of navigation bar /*
