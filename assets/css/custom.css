@@ -59,7 +59,6 @@ a {
   margin: 0;
   padding: .2em .5em;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
   color: #111;
   font-size: 18px;
   float: left;
@@ -78,6 +77,10 @@ a {
   text-decoration: none;
   transition: none;
   cursor: pointer;
+}
+
+.hidden {
+	visibility: hidden;
 }
 
 /* end of navigation bar /*
