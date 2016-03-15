@@ -1,0 +1,83 @@
+.content {
+	float: right;
+	width: 70%;
+	margin-left: 5%;
+}
+
+.sidebar {
+	float: left;
+	width: 25%;
+}
+
+.site-wrapper {
+	position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.blog-logo {
+	/* for centering the images */
+	float: none;
+}
+
+.blog-logo img {
+	width: 150px;
+	height: 150px;
+	margin: auto;	/* centers the image */
+}
+
+.post {
+	margin: 4rem 2rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* navigation bar */
+
+#content .taglist-wrapper {
+  width: 100%;
+  background: #ffd00e;
+  padding: 0;
+}
+
+#content ul.taglist {
+  padding: 0 1em;
+  margin: 0;
+  list-style: none;
+  max-width: 1250px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-bottom: 1px solid;
+}
+
+#content ul.taglist li {
+  margin: 0;
+  padding: .2em .5em;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  color: #111;
+  font-size: 18px;
+  float: left;
+  cursor: pointer;
+  transition: none;
+}
+#content ul.taglist li:hover {
+  background: #545454;
+  cursor: pointer;
+}
+#content ul.taglist li:hover a {
+  color: #fff;
+}
+
+#content ul.taglist li a {
+  text-decoration: none;
+  transition: none;
+  cursor: pointer;
+}
+
+/* end of navigation bar /*
