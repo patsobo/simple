@@ -51,36 +51,53 @@ a {
   padding: 0px;
 }
 
-
-
-
 /* navigation bar */
 
-#content .taglist-wrapper {
-  width: 100%;
-  background: #ffd00e;
+#content ul.taglist {
+  position: relative;
   padding: 0;
+  margin: 4rem 2rem;
+  padding-bottom: 20px;
+  border-bottom: #EBF2F6 1px solid;  list-style: none;
+  max-width: 710px;
+  width: 80%;
+  /*
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  */
 }
 
-#content ul.taglist {
-  padding: 0 1em;
-  margin: 0;
-  list-style: none;
-  max-width: 1250px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-bottom: 1px solid;
+/* Add a little circle in the middle of the border-bottom on our .post
+   just for the lolz and stylepoints. */
+.taglist:after {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: #E7EEF2 1px solid;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    background: #FFF;
+    border-radius: 100%;
+    box-shadow: #FFF 0 0 0 5px;
 }
 
 #content ul.taglist li {
   margin: 0;
-  padding: .2em .5em;
+  margin-right: .4em;
+  padding: .4em 1em;
   text-transform: uppercase;
   color: #111;
-  font-size: 18px;
-  float: left;
+  font-size: 14px;
+  display: inline;
   cursor: pointer;
-  transition: none;
+  transition: .5s;
+  /*
+  border-right: 1px solid;
+  border-top: 1px solid;
+  */
 }
 #content ul.taglist li:hover {
   background: #545454;
@@ -92,7 +109,7 @@ a {
 
 #content ul.taglist li a {
   text-decoration: none;
-  transition: none;
+  transition: .5s;
   cursor: pointer;
 }
 
