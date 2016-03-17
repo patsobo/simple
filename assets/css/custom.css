@@ -51,6 +51,27 @@ a {
   padding: 0px;
 }
 
+.sidelist li {
+  margin: 0px;
+  padding: .5em 1em;
+  cursor: pointer;
+  font-size: 14px;
+  transition: .5s;
+}
+
+.sidelist li a {
+  display: block;
+  text-transform: uppercase;
+}
+
+.sidelist li:hover {
+  background: #545454;
+  cursor: pointer;
+}
+.sidelist li:hover a {
+  color: #fff;
+}
+
 /* navigation bar */
 
 #content ul.taglist {
@@ -87,7 +108,7 @@ a {
 #content ul.taglist li {
   margin: 0;
   margin-right: .4em;
-  padding: .4em 1em;
+  padding: 1em;
   text-transform: uppercase;
   color: #111;
   font-size: 14px;

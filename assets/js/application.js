@@ -15,6 +15,22 @@ $(document).ready(function() {
     // if no link matches the current url, you must be in the blog
     if (!found) $(".sidelist .blog-link").addClass("highlight");
 
+    // same as above for the blog nav links
+    var found = false; 
+    $(".taglist li").each(function() {
+        var link = $(this).find("a").attr("href").split("#")[0];
+        var url = window.location.href.split("#")[0];
+        // check all combinations of having a trailing slash
+        if (link + "/" == url || link == url) {
+            $(this).addClass("highlight");
+            found = true;
+            return; // we've done what we want so leave
+        }
+    });
+
+    // if no link matches the current url, you must be in the blog
+    if (!found) $(".taglist .blog-link").addClass("highlight");
+
 
     // Handles the hidden blog on the main page
     //$(".blog-button").on("click", function() {
