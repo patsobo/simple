@@ -29,8 +29,6 @@ $(document).ready(function() {
     });
 
     // if no link matches the current url, you must be in the blog
-    if (!found) $(".taglist .blog-link").addClass("highlight");
-
 
     // Handles the hidden blog on the main page
     //$(".blog-button").on("click", function() {
