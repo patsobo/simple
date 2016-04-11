@@ -28,7 +28,7 @@ $(document).ready(function() {
         }
     });
 
-    // if no link matches the current url, you must be in the blog
+    // if no link matches the current url, you must be in the home page
     if (!found) $(".taglist .blog-link").addClass("highlight");
 
 
@@ -78,3 +78,4 @@ $(document).ready(function() {
 
 
 });
+

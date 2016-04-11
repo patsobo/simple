@@ -130,7 +130,6 @@ a {
 
 #content ul.taglist li a {
   text-decoration: none;
-  transition: .5s;
   cursor: pointer;
 }
 
