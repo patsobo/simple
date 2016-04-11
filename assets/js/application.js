@@ -28,6 +28,8 @@ $(document).ready(function() {
         }
     });
 
+    // if no link matches the current url, you must be in the blog
+
     // Handles the hidden blog on the main page
     //$(".blog-button").on("click", function() {
     //    $(".content").removeClass("hidden");
@@ -74,4 +76,3 @@ $(document).ready(function() {
 
 
 });
-

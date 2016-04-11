@@ -1,6 +1,10 @@
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css); /* for social media icons */
 
 
+blockquote {
+  margin-left: .8em;
+}
+
 /* -------------- Project page ----------------- */
 
 .projectList {
@@ -101,7 +105,7 @@
 	margin: 4rem 2rem;
 }
 
-a {
+.sidelist a, .taglist a, .box a {
 	text-decoration: none;
 }
 
@@ -197,6 +201,7 @@ a {
 
 #content ul.taglist li a {
   text-decoration: none;
+  transition: .5s;
   cursor: pointer;
 }
 
@@ -204,7 +209,6 @@ a {
 
 /* Social media icons */
 .footer-social-icons {
-  width: 350px;
   display:block;
   margin: 0 auto;
 }
@@ -313,4 +317,23 @@ ul.social-icons {
 
 .fa-google-plus:hover {
   background-color: #e25714;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .sidebar {
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+    margin-top: 40px;
+  }
+  ul.taglist {
+    width: 100%;
+    max-width: 800px;
+  }
+  ul.taglist li {
+    font-size: 10px;
+    margin-right: 0em;
+  }
 }
