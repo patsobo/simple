@@ -1,6 +1,16 @@
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css); /* for social media icons */
 
 
+body {
+  background-image: url(../low_contrast_linen.png);
+}
+.sidebar {
+  background: url(/theme/images/textured_paper.png) #f3eee8;
+}
+.content {
+  background: url(/theme/images/textured_paper.png) #fbfaf8;
+}
+
 blockquote {
   margin-left: .8em;
 }
@@ -74,7 +84,7 @@ blockquote {
 .content {
 	float: right;
 	width: 75%;
-	margin-left: 5%;
+	padding-left: 5%;
 }
 
 .sidebar {
@@ -114,7 +124,7 @@ blockquote {
 }
 
 .highlight {
-  background-color: #bbb;
+  border-color: #4FC128;
 }
 
 .sidelist {
@@ -126,21 +136,22 @@ blockquote {
   margin: 0px;
   padding: .5em 1em;
   cursor: pointer;
-  font-size: 14px;
+  font-size: .875em;
   transition: .5s;
+  border-left: 5px solid transparent;
 }
 
 .sidelist li a {
   display: block;
-  text-transform: uppercase;
 }
 
 .sidelist li:hover {
-  background: #545454;
+  background: rgba(233,234,234,.7);
+  border-color: #4FC128;
   cursor: pointer;
 }
 .sidelist li:hover a {
-  color: #fff;
+  /*color: #fff; */
 }
 
 /* navigation bar */
@@ -180,23 +191,23 @@ blockquote {
   margin: 0;
   margin-right: .4em;
   padding: 1em;
-  text-transform: uppercase;
   color: #111;
-  font-size: 14px;
+  font-size: .875em;
   display: inline;
   cursor: pointer;
   transition: .5s;
+  border-bottom: 5px solid transparent;
   /*
   border-right: 1px solid;
   border-top: 1px solid;
   */
 }
 #content ul.taglist li:hover {
-  background: #545454;
+  background: rgba(233,234,234,.7);
+  border-color: #4FC128;
   cursor: pointer;
 }
 #content ul.taglist li:hover a {
-  color: #fff;
 }
 
 #content ul.taglist li a {
