@@ -1,5 +1,8 @@
 $(document).ready(function() {
     // highlights the current page on the sidebar menu
+
+
+/*
     var found = false; 
     $(".sidelist li").each(function() {
         var link = $(this).find("a").attr("href").split("#")[0];
@@ -27,6 +30,7 @@ $(document).ready(function() {
             return; // we've done what we want so leave
         }
     });
+*/
 
     // if no link matches the current url, you must be in the blog
 
