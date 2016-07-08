@@ -158,6 +158,9 @@ blockquote {
 .sidelist li a {
   display: block;
   padding: .5em 1em;
+  color: #4075bf;
+  text-shadow: 1px 1px 0 #fbfaf8;
+
 }
 
 .sidelist li:hover {
